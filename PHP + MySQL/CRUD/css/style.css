@@ -1,0 +1,129 @@
+@font-face {
+	font-family: 'Famosa';
+	src: url('../fonts/Famosa-RegularDemo.otf');
+	font-style: normal;
+	font-weight: 400;
+}
+
+body {
+	margin:0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Famosa';
+	letter-spacing: 0.5px;
+	font-weight: bold;
+	background: url('../img/thumb-1920-751390.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #000;
+}
+
+th {
+	background-color: rgb(0,170,204,0.9);
+	padding: 10px;
+	font-size: 1.3em;
+	letter-spacing: 2px;
+	color: white;
+	text-transform: uppercase;
+}
+
+td {
+	background-color: rgb(153,255,119,0.9);
+	padding: 10px;
+}
+
+.title {
+	font-size: 1.8em;
+	background:#3D3EC1FF;
+}
+
+.add{
+	background-color: rgb(51,255,68,0.9);
+	color: rgb(255,255,255);
+	padding: 0;
+}
+
+.add button{
+	font-family: 'Famosa';
+	display: block;
+	font-size: 1.3em;
+	color: #FFF;
+	transition: 0.2s;
+}
+
+.add button:hover {
+	background-color: #fff
+	cursor: pointer;
+}
+
+.delete a,.update a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	transition: 0.2s;
+}
+
+.delete a:hover, .update a:hover {
+	color: #000;
+} 
+
+.delete { background-color: #F33 ;}
+
+.update { background-color:#15923D; }
+
+/* form add product */
+
+#form {
+	overflow: hidden;
+	display: none;
+	padding: 20px;
+	margin-top: 20px;
+	background: #BADa;
+}
+
+.submit-container {
+	display: flex;
+	justify-content: center;
+}
+
+.submit-container input {
+	color: #fff;
+	background: #173;
+	border: none;
+}
+
+input,textarea{
+	font-family: inherit;
+	left: inherit;
+	font-size: inherit;
+	display: block;
+	width: 300px;
+	padding: 10px;
+	margin-top: 10px;
+	outline:none;
+	border: none;
+	background-color: rgb(153,255,119,0.9);
+}
+
+button {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: none;
+	padding: 10px;
+	text-transform: uppercase;
+	background: #173;
+}
+
+button:hover,.submit-container input  {
+	cursor: pointer;
+	background: #053;
+}
+
+form label{
+	display: block;
+	padding-top: 10px;
+}
